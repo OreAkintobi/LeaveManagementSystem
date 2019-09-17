@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Optional CSS -->
-    <link href="css/home.css" type="text/css" rel="stylesheet">
+    <link href="css/newLeaveRequest.css" type="text/css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Home Page</title>
+    <title>New Leave Request</title>
 </head>
 
 <body>
@@ -46,35 +46,37 @@
     <div class="container">
         <div class="card border-0 shadow my-5">
             <div class="card-body p-5">
-                <h1 class="font-weight-light">Leave Requests</h1>
-                <div class="row justify-content-end">
-                    <input class="btn btn-success" type="button" value="Create New Request">
+                <h1 class="font-weight-light">New Leave Request</h1>
+                <!-- container for Leave Request Creation -->
+                <div style="height: 500px">
+                    <form class="form-container">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <select id="name" class="form-control" placeholder="Name">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="leave-type">Type of Leave</label>
+                            <select id="leave-type" class="form-control" placeholder="Type of Leave Requested">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <input type="date" class="form-control" id="start-date" name="start-date" placeholder="Start Date">
+                            <label for="to">To</label>
+                            <input type="date" class="form-control" id="end-date" name="end-date" placeholder="End Date">
+                        </div>
+                        <input class="btn btn-success" type="button" value="Create">
+                    </form>
                 </div>
-                <p class="lead">View your leave requests here</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Proposed Departure</th>
-                            <th scope="col">Proposed Return</th>
-                            <th scope="col">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><a href="#">Davina</a></td>
-                            <td>June 8</td>
-                            <td>July 5</td>
-                            <td>Not Approved</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <!-- container for Leave Request Display -->
-                <div style="height: 700px"></div>
-                <p class="lead mb-0">You've reached the end!</p>
             </div>
         </div>
     </div>
