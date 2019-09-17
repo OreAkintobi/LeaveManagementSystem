@@ -10,7 +10,7 @@ $(document).ready(function() {
                 data = resp.data;
                 for (let i = 0; i < data.length; i++) {
                     if (emailValue === data[i].email) {
-                        alert("Email does not exist");
+                        alert("Email is already taken");
                         return;
                     }
                 }
