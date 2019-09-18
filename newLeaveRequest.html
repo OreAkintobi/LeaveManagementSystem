@@ -49,23 +49,18 @@
                 <h1 class="font-weight-light">New Leave Request</h1>
                 <!-- container for Leave Request Creation -->
                 <div style="height: 500px">
-                    <form class="form-container">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <select id="name" class="form-control" placeholder="Name">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                            </select>
-                        </div>
+                    <form class="form-container" id="leave-form">
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+                            <input type="email" class="form-control" id="email" disabled="true" name="email" placeholder="Enter Your Email">
                         </div>
                         <div class="form-group">
                             <label for="leave-type">Type of Leave</label>
                             <select id="leave-type" class="form-control" placeholder="Type of Leave Requested">
-                                <option selected>Choose...</option>
-                                <option>...</option>
+                                <option selected>...</option>
+                                <option>Annual Leave</option>
+                                <option>Maternity/Paternity Leave</option>
+                                <option>Sick Leave</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -74,18 +69,19 @@
                             <label for="to">To</label>
                             <input type="date" class="form-control" id="end-date" name="end-date" placeholder="End Date">
                         </div>
-                        <input class="btn btn-success" type="button" value="Create">
+                        <input class="btn btn-success" type="submit" value="Create">
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <script src="js/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="/js/newLeaveRequest.js"></script>
 </body>
 
 </html>

@@ -42,11 +42,9 @@ $(document).ready(function() {
                 var data = resp.data;
                 for (let i = 0; i < data.length; i++) {
                     if (emailValue === data[i].email && password === data[i].password) {
-                        login(resp.data);
+                        login(data[i]);
                         userFound = true;
                         window.location = "/home.html";
-                        // console.log("djskcvkdnk vdk")
-                        // return;
                     }
                 }
                 if (!userFound) {
