@@ -1,45 +1,60 @@
 {
-    "leaveRequests": [{
-        "email": "rob23@gmail.com",
-        "id": 1568768693979,
-        "typeOfLeave": "Sick",
-        "from": "2019-09-20",
-        "to": "2019-09-20"
-    }],
-    "users": [{
-            "id": 1,
-            "email": "rob23@gmail.com",
-            "password": "robschwartz4life"
-        },
-        {
-            "id": 2,
-            "email": "hannahb@gmail.com",
-            "password": "hannahbanana"
-        },
-        {
-            "id": 1568750540154,
-            "email": "nandymata@gmail.com",
-            "password": "sdfghj,jhnbs"
-        },
-        {
-            "id": 1568750865529,
-            "email": "naa@gmail.com",
-            "password": "wreryhyju"
-        },
-        {
-            "id": 1568753210948,
-            "email": "kinkybugga@gmail.com",
-            "password": "redherrypoosy"
-        },
-        {
-            "id": 1568754003272,
-            "email": "rob23iittr@gmail.com",
-            "password": "fghjkgff"
-        },
-        {
-            "id": 1568754937823,
-            "email": "davie@gmail.com",
-            "password": "robschwartz4life"
-        }
-    ]
+  "leaveRequests": [
+    {
+      "email": "rob23@gmail.com",
+      "id": 1568768693979,
+      "typeOfLeave": "Sick",
+      "from": "2019-09-20",
+      "to": "2019-09-20"
+    },
+    {
+      "email": "jamesakintayo@gmail.com",
+      "id": 1568808516434,
+      "typeOfLeave": "Maternity/Paternity Leave",
+      "from": "2019-09-26",
+      "to": "2019-09-30"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "rob23@gmail.com",
+      "password": "robschwartz4life"
+    },
+    {
+      "id": 2,
+      "email": "hannahb@gmail.com",
+      "password": "hannahbanana"
+    },
+    {
+      "id": 1568750540154,
+      "email": "nandymata@gmail.com",
+      "password": "sdfghj,jhnbs"
+    },
+    {
+      "id": 1568750865529,
+      "email": "naa@gmail.com",
+      "password": "wreryhyju"
+    },
+    {
+      "id": 1568753210948,
+      "email": "kinkybugga@gmail.com",
+      "password": "redherrypoosy"
+    },
+    {
+      "id": 1568754003272,
+      "email": "rob23iittr@gmail.com",
+      "password": "fghjkgff"
+    },
+    {
+      "id": 1568754937823,
+      "email": "davie@gmail.com",
+      "password": "robschwartz4life"
+    },
+    {
+      "id": 1568808497141,
+      "email": "jamesakintayo@gmail.com",
+      "password": "rumba"
+    }
+  ]
 }

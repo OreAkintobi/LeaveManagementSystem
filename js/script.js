@@ -1,4 +1,15 @@
 // REQUIREMENTS (V4)
+$(document).ready(function() {
+    axios.get('http://localhost:3000/leaveRequests').then(function(resp) {
+        var data = resp.data;
+        for (let i = 0; i < data.length; i++) {
+            $("#leaveRequestData").html("<tr>" + "<td>" + "</td>" +
+                "<td>" + data[i].email + "</td>" + "<td>" + data[i].typeOfLeave + "</td>" + "<td>" + data[i].from + "</td>" + "<td>" + data[i].to + "</td>" + "<td>" + "</td>" + "</tr>");
+        }
+        event.preventDefault();
+    });
+});
+
 
 // leaveRequests.addRequest should add objects
 var leaveRequests = {
@@ -29,13 +40,3 @@ var leaveRequests = {
         this.displayRequests();
     }
 }
-
-leaveRequests.addRequest("request1");
-leaveRequests.addRequest("request2");
-leaveRequests.deleteRequest(4);
-leaveRequests.toggleApproval(0);
-
-// UP NEXT:
-// Approve/Disapprove leave request.
-// Sign up
-// Login
