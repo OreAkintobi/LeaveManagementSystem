@@ -1,12 +1,14 @@
 $(document).ready(function() {
     var loggedInUser = JSON.parse(localStorage.getItem("logged-in-user"));
     $("#email").val(loggedInUser.email);
+    $("#leave-type").val(loggedInUser.typeOfLeave);
+    $("#start-date").val(loggedInUser.from);
+    $("#end-date").val(loggedInUser.to);
     $("#leave-form").submit(function(event) {
         event.preventDefault();
         var leaveValue = $("#leave-type").val();
         var startDate = $("#start-date").val();
         var endDate = $("#end-date").val();
-        var status = $("#status").val();
         console.log(leaveValue);
         console.log(startDate);
         console.log(endDate);
@@ -16,12 +18,10 @@ $(document).ready(function() {
             typeOfLeave: leaveValue,
             from: startDate,
             to: endDate,
-            status: "Pending",
         }).then(function(resp) {
             console.log(leaveValue);
             console.log(startDate);
             console.log(endDate);
-
             window.location = "/home.html";
         })
     })

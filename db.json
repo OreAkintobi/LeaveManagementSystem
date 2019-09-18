@@ -3,16 +3,17 @@
     {
       "email": "rob23@gmail.com",
       "id": 1568768693979,
-      "typeOfLeave": "Sick",
+      "typeOfLeave": "Sick Leave",
       "from": "2019-09-20",
       "to": "2019-09-20"
     },
     {
       "email": "jamesakintayo@gmail.com",
-      "id": 1568808516434,
-      "typeOfLeave": "Maternity/Paternity Leave",
-      "from": "2019-09-26",
-      "to": "2019-09-30"
+      "id": 1568817853996,
+      "typeOfLeave": "Annual Leave",
+      "from": "2019-09-19",
+      "to": "2019-09-27",
+      "status": "Pending"
     }
   ],
   "users": [

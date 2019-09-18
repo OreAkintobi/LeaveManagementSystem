@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>New Leave Request</title>
+    <title>View a Leave Request</title>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
     <div class="container">
         <div class="card border-0 shadow my-5">
             <div class="card-body p-5">
-                <h1 class="font-weight-light">New Leave Request</h1>
+                <h1 class="font-weight-light">Leave Request</h1>
                 <!-- container for Leave Request Creation -->
                 <div style="height: 500px">
                     <form class="form-container" id="leave-form">
@@ -57,7 +57,6 @@
                         <div class="form-group">
                             <label for="leave-type">Type of Leave</label>
                             <select id="leave-type" class="form-control" placeholder="Type of Leave Requested">
-                                <option selected>...</option>
                                 <option>Annual Leave</option>
                                 <option>Maternity/Paternity Leave</option>
                                 <option>Sick Leave</option>
@@ -72,12 +71,14 @@
                         <div class="form-group">
                             <label for="status">Status</label>
                             <select id="status" class="form-control" disabled="true" placeholder="Status">
-                                    <option selected>Pending</option>
-                                    <option>Approved</option>
-                                    <option>Declined</option>
-                                </select>
+                                <option selected>Pending</option>
+                                <option>Approved</option>
+                                <option>Declined</option>
+                            </select>
                         </div>
-                        <input class="btn btn-success" type="submit" value="Create">
+                        <input class="btn btn-success approve" type="submit" value="Approve">
+                        <button type="button" class="btn btn-danger">Reject</button>
+                        <button type="button" class="btn btn-primary">Edit</button>
                     </form>
                 </div>
             </div>
@@ -89,7 +90,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Optional JavaScript -->
-    <script src="/js/newLeaveRequest.js"></script>
+    <script src="/js/viewLeaveRequest.js"></script>
 </body>
 
 </html>

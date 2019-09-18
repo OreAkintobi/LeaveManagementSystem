@@ -4,7 +4,7 @@ $(document).ready(function() {
         var data = resp.data;
         for (let i = 0; i < data.length; i++) {
             $("#leaveRequestData").html("<tr>" + "<td>" + "</td>" +
-                "<td>" + data[i].email + "</td>" + "<td>" + data[i].typeOfLeave + "</td>" + "<td>" + data[i].from + "</td>" + "<td>" + data[i].to + "</td>" + "<td>" + "</td>" + "</tr>");
+                "<td>" + "<a href='/viewLeaveRequest.html'>" + data[i].email + "</a>" + "</td>" + "<td>" + data[i].typeOfLeave + "</td>" + "<td>" + data[i].from + "</td>" + "<td>" + data[i].to + "</td>" + "<td>" + data[i].status + "</td>" + "<td>" + "<button type='button' class='btn btn-success'>Approve</button>" + "<button type='button' class='btn btn-danger'>Reject</button>" + "<button type='button' class='btn btn-primary'>Edit</button>" + "</td>" + "</tr>");
         }
         event.preventDefault();
     });
