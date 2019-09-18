@@ -1,11 +1,13 @@
-// REQUIREMENTS (V4)
 $(document).ready(function() {
+    // Initializes GET request on active database
     axios.get('http://localhost:3000/leaveRequests').then(function(resp) {
         var data = resp.data;
+        // Dynamic addition of user Leave Requests from active database and adds buttons
         for (let i = 0; i < data.length; i++) {
             $("#leaveRequestData").html("<tr>" + "<td>" + "</td>" +
                 "<td>" + "<a href='/viewLeaveRequest.html'>" + data[i].email + "</a>" + "</td>" + "<td>" + data[i].typeOfLeave + "</td>" + "<td>" + data[i].from + "</td>" + "<td>" + data[i].to + "</td>" + "<td>" + data[i].status + "</td>" + "<td>" + "<button type='button' class='btn btn-success'>Approve</button>" + "<button type='button' class='btn btn-danger'>Reject</button>" + "<button type='button' class='btn btn-primary'>Edit</button>" + "</td>" + "</tr>");
         }
+        // Delays automatic refresh 
         event.preventDefault();
     });
 });
