@@ -1,62 +1,46 @@
 {
-  "leaveRequests": [
-    {
-      "email": "rob23@gmail.com",
-      "id": 1568768693979,
-      "typeOfLeave": "Sick Leave",
-      "from": "2019-09-20",
-      "to": "2019-09-20",
-      "status": "Approved"
-    },
-    {
-      "email": "kinkybugga@gmail.com",
-      "id": 1568852053239,
-      "typeOfLeave": "Sick Leave",
-      "from": "2019-09-22",
-      "to": "2019-09-30",
-      "status": "Approved"
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "email": "rob23@gmail.com",
-      "password": "robschwartz4life"
-    },
-    {
-      "id": 2,
-      "email": "hannahb@gmail.com",
-      "password": "hannahbanana"
-    },
-    {
-      "id": 1568750540154,
-      "email": "nandymata@gmail.com",
-      "password": "sdfghj,jhnbs"
-    },
-    {
-      "id": 1568750865529,
-      "email": "naa@gmail.com",
-      "password": "wreryhyju"
-    },
-    {
-      "id": 1568753210948,
-      "email": "kinkybugga@gmail.com",
-      "password": "redherrypoosy"
-    },
-    {
-      "id": 1568754003272,
-      "email": "rob23iittr@gmail.com",
-      "password": "fghjkgff"
-    },
-    {
-      "id": 1568754937823,
-      "email": "davie@gmail.com",
-      "password": "robschwartz4life"
-    },
-    {
-      "id": 1568808497141,
-      "email": "jamesakintayo@gmail.com",
-      "password": "rumba"
-    }
-  ]
+    "leaveRequests": [{
+            "email": "rob23@gmail.com",
+            "id": 1568768693979,
+            "typeOfLeave": "Sick Leave",
+            "from": "2019-09-20",
+            "to": "2019-09-20",
+            "status": "Approved"
+        },
+        {
+            "email": "kinkybugga@gmail.com",
+            "id": 1568852053239,
+            "typeOfLeave": "Sick Leave",
+            "from": "2019-09-22",
+            "to": "2019-09-30",
+            "status": "Approved"
+        },
+        {
+            "email": "kinkybugga@gmail.com",
+            "id": 1568882239279,
+            "typeOfLeave": "Annual Leave",
+            "from": "2019-09-26",
+            "to": "2019-09-27",
+            "status": "Rejected"
+        }
+    ],
+    "users": [{
+            "id": 1568883089351,
+            "email": "oreakintobi@gmail.com",
+            "password": "tingting",
+            "isAdmin": true
+        },
+        {
+            "id": 1,
+            "email": "rob23@gmail.com",
+            "password": "robschwartz4life",
+            "isAdmin": false
+        },
+        {
+            "id": 1568881197903,
+            "email": "kinkybugga@gmail.com",
+            "password": "bigman",
+            "isAdmin": false
+        }
+    ]
 }

@@ -28,6 +28,7 @@ $(document).ready(function() {
                     id: Date.now(),
                     email: emailValue,
                     password: password,
+                    isAdmin: false,
                 }).then(function(resp) {
                     login(resp.data);
                     window.location = "/home.html";
