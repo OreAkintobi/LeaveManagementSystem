@@ -11,9 +11,6 @@ $(document).ready(function() {
         var leaveValue = $("#leave-type").val();
         var startDate = $("#start-date").val();
         var endDate = $("#end-date").val();
-        console.log(leaveValue);
-        console.log(startDate);
-        console.log(endDate);
         // Initializes POST request on active database
         axios.post('http://localhost:3000/leaveRequests', {
             // Grabs the values entered below and posts them onto server
@@ -24,9 +21,6 @@ $(document).ready(function() {
             to: endDate,
             status: "Pending",
         }).then(function(resp) {
-            console.log(leaveValue);
-            console.log(startDate);
-            console.log(endDate);
             // Redirects user to Homepage
             window.location = "/home.html";
         })

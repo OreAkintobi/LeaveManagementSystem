@@ -15,15 +15,19 @@ $(document).ready(function() {
         event.preventDefault();
         var emailValue = $("#email").val();
         var password = $("#password").val();
+        // Gets user data from JSON
         axios.get('http://localhost:3000/users')
             .then(function(resp) {
                 var data = resp.data;
+                // Checks if available user data matches entered data
                 for (let i = 0; i < data.length; i++) {
                     if (emailValue === data[i].email) {
-                        alert("Email is already taken");
+                        $(".email-exists").text("Email already exists");
+                        $(".email-exists").css("color", "red");
                         return;
                     }
                 }
+                // Posts new user data to JSON
                 axios.post('http://localhost:3000/users', {
                     id: Date.now(),
                     email: emailValue,
@@ -41,23 +45,29 @@ $(document).ready(function() {
                 console.log(error);
             });
     });
+    // Initializes sign-up behavior
     $("#login").submit(function(event) {
         event.preventDefault();
         var emailValue = $("#email").val();
         var password = $("#password").val();
+        // Gets user data from JSON
         axios.get('http://localhost:3000/users')
             .then(function(resp) {
                 var userFound = false;
                 var data = resp.data;
+                // Checks if available user email and password matches entered data
                 for (let i = 0; i < data.length; i++) {
                     if (emailValue === data[i].email && password === data[i].password) {
+                        // Then logs them in
                         login(data[i]);
                         userFound = true;
                         window.location = "/home.html";
                     }
                 }
+                // Notifies user when user data is unavailable
                 if (!userFound) {
-                    alert("Invalid password");
+                    $(".email-exists").text("Wrong username or password");
+                    $(".email-exists").css("color", "red");
                     return;
                 }
             })

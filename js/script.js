@@ -20,7 +20,7 @@ $(document).ready(function() {
                 rows += `<tr><td></td><td>${data[i].email}</td><td>${data[i].typeOfLeave}</td><td>${data[i].from}</td><td>${data[i].to}</td><td>${data[i].status}</td><td><button type='button' class='btn btn-success approve' data-id='${data[i].id}'>Approve</button><button type='button' class='btn btn-danger reject' data-id='${data[i].id}'>Reject</button><a class='btn btn-primary edit-button' href='/viewLeaveRequest.html?id=${data[i].id}' role='button'>View</a></td></tr>`;
             } else if (userCheck.email === data[i].email) {
                 // Otherwise, display user's leave request and View button only
-                rows = `<tr><td></td><td>${data[i].email}</td><td>${data[i].typeOfLeave}</td><td>${data[i].from}</td><td>${data[i].to}</td><td>${data[i].status}</td><td><a class='btn btn-primary edit-button' href='/viewLeaveRequest.html?id=${data[i].id}' role='button'>View</a></td></tr>`;
+                rows += `<tr><td></td><td>${data[i].email}</td><td>${data[i].typeOfLeave}</td><td>${data[i].from}</td><td>${data[i].to}</td><td>${data[i].status}</td><td><a class='btn btn-primary edit-button' href='/viewLeaveRequest.html?id=${data[i].id}' role='button'>View</a></td></tr>`;
             }
         }
         $("#leaveRequestData").html(rows);
@@ -39,7 +39,6 @@ function updateStatus(id, status) {
     newLeaveRequest.status = status;
     axios.put("http://localhost:3000/leaveRequests/" + id, newLeaveRequest)
         .then(function(resp) {
-            alert("Leave Request Updated!");
             location.reload(true);
         }).catch(function(error) {
             console.log(error);
