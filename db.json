@@ -1,20 +1,12 @@
 {
   "leaveRequests": [
     {
-      "email": "rob23@gmail.com",
-      "id": 1568768693979,
-      "typeOfLeave": "Sick Leave",
-      "from": "2019-09-20",
-      "to": "2019-09-20",
-      "status": "Rejected"
-    },
-    {
       "email": "kinkybugga@gmail.com",
       "id": 1568852053239,
       "typeOfLeave": "Sick Leave",
       "from": "2019-09-22",
       "to": "2019-09-30",
-      "status": "Rejected"
+      "status": "Approved"
     },
     {
       "email": "kinkybugga@gmail.com",
@@ -50,10 +42,26 @@
     },
     {
       "email": "rob23@gmail.com",
-      "id": 1568906105933,
-      "typeOfLeave": "Sick Leave",
-      "from": "2019-09-25",
-      "to": "2019-09-30",
+      "id": 1568922810221,
+      "typeOfLeave": "Maternity/Paternity Leave",
+      "from": "2019-09-22",
+      "to": "2019-09-28",
+      "status": "Pending"
+    },
+    {
+      "email": "davidblaine@grindr.com",
+      "id": 1568924136707,
+      "typeOfLeave": "Annual Leave",
+      "from": "2019-12-06",
+      "to": "2019-12-31",
+      "status": "Pending"
+    },
+    {
+      "email": "rob23@gmail.com",
+      "id": 1568927002873,
+      "typeOfLeave": "Annual Leave",
+      "from": "2019-09-30",
+      "to": "2019-11-30",
       "status": "Pending"
     }
   ],
@@ -92,6 +100,12 @@
       "id": 1568904631482,
       "email": "balaclavabadmus@hotmail.com",
       "password": "balaclavaman",
+      "isAdmin": false
+    },
+    {
+      "id": 1568924108570,
+      "email": "davidblaine@grindr.com",
+      "password": "seymourbotts",
       "isAdmin": false
     }
   ]
