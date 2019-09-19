@@ -1,7 +1,9 @@
 $(document).ready(function() {
+    // Initializes REJECT behavior on dynamic tag
     $("#leaveRequestData").on('click', '.reject', function(event) {
         updateStatus($(event.target).data("id"), 'Rejected');
     });
+    // Initializes ACCEPT behavior on dynamic tag
     $("#leaveRequestData").on('click', '.approve', function(event) {
         updateStatus($(event.target).data("id"), 'Approved');
     });
@@ -31,12 +33,15 @@ $(document).ready(function() {
 
 function updateStatus(id, status) {
     var newLeaveRequest;
+    // Loops through available leave requests and finds the details of the one the admin is currently working on
     for (let i = 0; i < window.leaveRequests.length; i++) {
         if (window.leaveRequests[i].id === id) {
             newLeaveRequest = window.leaveRequests[i];
         }
     }
+    // changes status based on button click
     newLeaveRequest.status = status;
+    // PUT request logs change to JSON server and saves it
     axios.put("http://localhost:3000/leaveRequests/" + id, newLeaveRequest)
         .then(function(resp) {
             location.reload(true);
