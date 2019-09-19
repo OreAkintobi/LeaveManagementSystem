@@ -5,15 +5,16 @@
       "id": 1568768693979,
       "typeOfLeave": "Sick Leave",
       "from": "2019-09-20",
-      "to": "2019-09-20"
+      "to": "2019-09-20",
+      "status": "Approved"
     },
     {
-      "email": "jamesakintayo@gmail.com",
-      "id": 1568817853996,
-      "typeOfLeave": "Annual Leave",
-      "from": "2019-09-19",
-      "to": "2019-09-27",
-      "status": "Pending"
+      "email": "kinkybugga@gmail.com",
+      "id": 1568852053239,
+      "typeOfLeave": "Sick Leave",
+      "from": "2019-09-22",
+      "to": "2019-09-30",
+      "status": "Approved"
     }
   ],
   "users": [

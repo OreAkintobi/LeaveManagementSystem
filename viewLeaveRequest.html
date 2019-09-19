@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Link to primary CSS -->
-    <link href="css/newLeaveRequest.css" type="text/css" rel="stylesheet">
     <!-- Link toBootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Link to primary CSS -->
+    <link href="css/newLeaveRequest.css" type="text/css" rel="stylesheet">
     <title>View a Leave Request</title>
 </head>
 
@@ -63,15 +63,15 @@
                         </div>
                         <div class="form-group">
                             <label for="status">Status</label>
-                            <select id="status" class="form-control" disabled="true" placeholder="Status">
+                            <input type="text" class="form-control" id="status" name="status" placeholder="Status">
+                            <!-- <select id="status" class="form-control" placeholder="Status">
                                 <option selected>Pending</option>
                                 <option>Approved</option>
                                 <option>Declined</option>
-                            </select>
+                            </select> -->
                         </div>
-                        <input class="btn btn-success approve" type="submit" value="Approve">
-                        <button type="button" class="btn btn-danger">Reject</button>
-                        <button type="button" class="btn btn-primary">Edit</button>
+                        <button type="button" class="btn btn-primary edit">Edit</button>
+                        <button type="button" class="btn btn-danger delete">Delete</button>
                     </form>
                 </div>
             </div>

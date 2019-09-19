@@ -11,7 +11,6 @@ $(document).ready(function() {
         var leaveValue = $("#leave-type").val();
         var startDate = $("#start-date").val();
         var endDate = $("#end-date").val();
-        var status = $("#status").val();
         console.log(leaveValue);
         console.log(startDate);
         console.log(endDate);
