@@ -6,7 +6,7 @@
       "typeOfLeave": "Sick Leave",
       "from": "2019-09-22",
       "to": "2019-09-30",
-      "status": "Approved"
+      "status": "Rejected"
     },
     {
       "email": "kinkybugga@gmail.com",
@@ -38,14 +38,6 @@
       "typeOfLeave": "Maternity/Paternity Leave",
       "from": "2019-09-25",
       "to": "2019-11-04",
-      "status": "Pending"
-    },
-    {
-      "email": "rob23@gmail.com",
-      "id": 1568922810221,
-      "typeOfLeave": "Maternity/Paternity Leave",
-      "from": "2019-09-22",
-      "to": "2019-09-28",
       "status": "Pending"
     },
     {
