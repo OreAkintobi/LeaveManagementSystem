@@ -38,7 +38,7 @@ $(document).ready(function() {
           })
           .then(function(resp) {
             login(resp.data);
-            window.location = "/home.html";
+            window.location = "/index.html";
           })
           .catch(function(error) {
             console.log(error);
@@ -63,7 +63,7 @@ $(document).ready(function() {
           // Then logs them in
           login(data[i]);
           userFound = true;
-          window.location = "/home.html";
+          window.location = "/index.html";
         }
       }
       // Notifies user when user data is unavailable

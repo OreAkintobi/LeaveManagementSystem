@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Link toBootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Link to primary CSS -->
     <link href="css/newLeaveRequest.css" type="text/css" rel="stylesheet">
     <title>New Leave Request</title>
@@ -15,10 +16,11 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
         <div class="container">
-            <a class="navbar-brand" href="/home.html">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+            <a class="navbar-brand" href="/index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -42,7 +44,8 @@
                     <form class="form-container" id="leave-form">
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" disabled="true" name="email" placeholder="Enter Your Email">
+                            <input type="email" class="form-control" id="email" disabled="true" name="email"
+                                placeholder="Enter Your Email">
                         </div>
                         <div class="form-group">
                             <label for="leave-type">Type of Leave</label>
@@ -55,17 +58,19 @@
                         </div>
                         <div class="form-group">
                             <label for="from">From</label>
-                            <input type="date" class="form-control" id="start-date" name="start-date" placeholder="Start Date">
+                            <input type="date" class="form-control" id="start-date" name="start-date"
+                                placeholder="Start Date">
                             <label for="to">To</label>
-                            <input type="date" class="form-control" id="end-date" name="end-date" placeholder="End Date">
+                            <input type="date" class="form-control" id="end-date" name="end-date"
+                                placeholder="End Date">
                         </div>
                         <div class="form-group">
                             <label for="status">Status</label>
                             <select id="status" class="form-control" disabled="true" placeholder="Status">
-                                    <option selected>Pending</option>
-                                    <option>Approved</option>
-                                    <option>Declined</option>
-                                </select>
+                                <option selected>Pending</option>
+                                <option>Approved</option>
+                                <option>Declined</option>
+                            </select>
                         </div>
                         <input class="btn btn-success" type="submit" value="Create">
                     </form>
@@ -76,8 +81,12 @@
     <!-- jQuery, Axios, Popper.js, & Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <!-- Link to primary JS -->
     <script src="/js/newLeaveRequest.js"></script>
     <script src="/js/checkAuth.js"></script>
